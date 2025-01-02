@@ -1,4 +1,4 @@
-name: Docker Publish and PyPI
+name: Docker Publish
 
 on:
   push:
@@ -33,7 +33,7 @@ jobs:
           docker push "${{ secrets.DOCKER_REGISTRY }}/flask-app:latest"
 
   publish-to-pypi:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     needs: build-and-push  # Ensure PyPI publish runs after Docker publish job
 
     steps:
