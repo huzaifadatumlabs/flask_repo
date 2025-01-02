@@ -45,7 +45,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.9'  # Use your required Python version
+          python-version: '3.12'  # Use your required Python version
 
       # Step 3: Install Poetry
       - name: Install Poetry
