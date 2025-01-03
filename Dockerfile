@@ -20,4 +20,4 @@ COPY . /app/
 EXPOSE 5000
 
 # Set the command to run the app
-CMD ["poetry", "run", "python", "app.py"]
+CMD  ["poetry", "run", "python", "flask_testing/flask_testing/app.py", "-h", "0.0.0.0", "-p", "5000"]
