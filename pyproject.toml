@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "huzaifa-flask-testing"
 version = "0.1.0"
-description = ""
+description = "Project for testing workflows"
 authors = ["Huzaifa Naeem <huzaifa.naeem@datumlabs.io>"]
 readme = "README.md"
 
@@ -9,6 +9,9 @@ readme = "README.md"
 python = "^3.12"
 flask = "^3.1.0"
 
+[tool.poetry.packages]
+# Specify the directory where your Python package code is located
+packages = [{ include = "huzaifa_flask_testing" }]
 
 [build-system]
 requires = ["poetry-core"]
