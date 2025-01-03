@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "flask-testing"
+name = "huzaifa-flask-testing"
 version = "0.1.0"
 description = ""
 authors = ["Huzaifa Naeem <huzaifa.naeem@datumlabs.io>"]
