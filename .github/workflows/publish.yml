@@ -37,28 +37,28 @@ jobs:
     needs: build-and-push  # Ensure PyPI publish runs after Docker publish job
 
     steps:
-      # Step 1: Checkout code
+      # Step 1: Checkout the code
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       # Step 2: Set up Python
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.12'  # Use your required Python version
+          python-version: '3.12'  # Match your Poetry project version
 
       # Step 3: Install Poetry
       - name: Install Poetry
         run: |
-           pip install poetry
+          pip install poetry
 
-      # Step 4: Install dependencies with Poetry
+      # Step 4: Install dependencies
       - name: Install dependencies
         run: |
           poetry install
 
-      # Step 5: Build the package with Poetry
-      - name: Build the package
+      # Step 5: Build the package
+      - name: Build package
         run: |
           poetry build
 
